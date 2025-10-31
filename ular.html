@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME ULAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>GAME ULAR</h1>
+
+    <!-- 🎮 Kanvas tempat ular -->
+    <canvas id="gameCanvas" width="1000" height="400"></canvas>
+
+    <div class="info">
+        <p>Skor : <span id="score">0</span></p>
+        <p id="gameOver" style="display: none; color: rgb(255, 221, 227);">Game Over</p>
+        <button onclick="resetGame()">Restart Game</button>
+        <button onclick="toggleMusic()">🎵 Musik</button>
+    </div>
+
+    <!-- 🔊 Suara Game Over -->
+    <audio id="gameOverSound" src="game-over-39-199830.mp3"></audio>
+
+    <!-- 🎶 Musik Latar -->
+    <audio id="bgMusic" src="backsound.mp3" loop autoplay></audio>
+
+    <!-- 🔊 Suara saat ular makan apel -->
+<audio id="eatSound" src="eat-323883.mp3"></audio>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
